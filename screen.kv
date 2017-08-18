@@ -1,0 +1,74 @@
+#:import FadeTransition kivy.uix.screenmanager.NoTransition
+
+
+
+BoxLayout:
+    #size: 1024,768
+    orientation:'vertical'
+    #size_hint: 0.8, 1
+
+    BoxLayout:
+        orientation:'horizontal'
+        #By (left commands, large area)
+        #size_hint: 0.5,1
+
+        BoxLayout:
+            orientation:'vertical'
+            spacing: 3
+            size_hint: 0.5,1
+            #size_hint: 0.5,0.5
+            Button:
+                id: btn_list
+                text:'List Items'
+
+                #on_press: app.root.current = 'add'
+                #on_press: app.whichscreen('l')
+                on_press: app.itmlist()
+                #on_press: app.root.manager.current = 'add'
+
+            Button:
+                id:btn_hire
+                text: "Hire Items"
+                on_press:app.itmhire()
+
+            Button:
+                id:btn_return
+                text: "Return Items"
+                on_press:app.itmreturn()
+
+            Button:
+                id:btn_confirm
+                text: "Confirm"
+                on_press:app.itmConfirm()
+                disabled: True
+
+            Button:
+                id:btn_new
+                text: "Add New Item"
+                on_press:app.itmadd()
+                #on_press: app.root.current = 'add'
+
+        BoxLayout:
+            #This is for right large area
+            #size_hint:1,1
+            id:message
+            orientation:'vertical'
+            #Label:
+            #	text:"Messages"
+            Image:
+                source:'./welcomeScreen.jpg'
+            #backgound_color:
+
+    BoxLayout:
+        #For footer
+        size_hint:1,None
+        Image:
+            source:'./information_01.png'
+        Label:
+            id:msg
+            text:""
+            #text_size:self.size
+            #size: (500,10)
+            #color: 255,1,0,234
+        Image:
+            source:'./information_01.png'
