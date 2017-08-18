@@ -2,12 +2,12 @@
 #System Type : Product Hiring System
 
 #Description
-Products details are stored in .csv file (items.csv)
-Can get the item details from a web hosting site
-Can list the items as their name, price and others
-Can update the detail of each product
-Can add the new product into the system
-Can delete the existing products from the system
+Products details are stored in .csv file (items.csv).<br>
+Can get the item details from a web hosting site.<br>
+Can list the items as their name, price and others.<br>
+Can update the detail of each product.<br>
+Can add the new product into the system.<br>
+Can delete the existing products from the system.<br>
 
 #Command Line APP
 How to Run the program : python3 ThanWaiA1.py
